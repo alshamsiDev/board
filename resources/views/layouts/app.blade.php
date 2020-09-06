@@ -29,7 +29,8 @@
                 <h1>
                     <a class="navbar-brand" href="{{ url('/projects') }}">
                         <i class="fas fa-tasks"></i>
-                        {{ config('app.name', 'Laravel') }}
+{{--                        {{ config('app.name', 'Laravel') }}--}}
+                        Project management
                     </a>
                 </h1>
 

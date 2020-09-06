@@ -45,7 +45,19 @@ class Task extends Model
     public function incomplete()
     {
         $this->update(['completed' => false]);
-        $this->project->recordActivity('incompleted_task');
+        $this->recordActivity('incompleted_task');
+    }
 
+    public function recordActivity($description)
+    {
+        $this->activity()->create([
+            'project_id' => $this->project_id,
+            'description' => $description
+        ]);
+    }
+
+    public function activity()
+    {
+        return $this->morphMany('App\Activity', 'subject')->latest();
     }
 }

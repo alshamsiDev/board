@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class RecordActivityTest extends TestCase
+class TriggerActivityTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
 
@@ -37,9 +37,13 @@ class RecordActivityTest extends TestCase
         $project = auth()->user()->projects()->create(
             factory('App\Project')->raw()
         );
-        $project->addTask('Add Task');
+        $project->addTask('Some Task');
         $this->assertCount(2, $project->activity);
-        $this->assertEquals('created_task', $project->activity->last()->description);
+        tap($project->activity->last(), function ($activity) {
+            $this->assertEquals('created_task', $activity->description);
+            $this->assertInstanceOf('App\Task', $activity->subject);
+        });
+//        $this->assertEquals('created_task', $project->activity->last()->description);
     }
 
     public function test_completing_a_task_update_records_activity()
@@ -54,9 +58,11 @@ class RecordActivityTest extends TestCase
             'completed' => true
         ]);
 
-//        dd($project->tasks[0]->body);
         $this->assertCount(3, $project->activity);
-        $this->assertEquals('completed_task', $project->activity->last()->description);
+        tap($project->activity->last(), function ($activity) {
+            $this->assertEquals('completed_task', $activity->description);
+            $this->assertInstanceOf('App\Task', $activity->subject);
+        });
     }
 
     public function test_incompleting_a_task_update_records_activity()

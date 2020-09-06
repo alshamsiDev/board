@@ -10,7 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d36444eb-1e0e-4c13-b78a-d3e0a232dbbb" name="Default Changelist" comment="" />
+    <list default="true" id="d36444eb-1e0e-4c13-b78a-d3e0a232dbbb" name="Default Changelist" comment="first init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Activity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Observers/TaskObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TaskObserver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_24_183035_create_activities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_24_183035_create_activities_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/activity/completed_task.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/activity/completed_task.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/activity/created_task.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/activity/created_task.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/projects/activity/incompleted_task.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/projects/activity/incompleted_task.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/RecordActivityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +154,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/projects/activity" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.PHP" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -151,41 +162,42 @@
       <recent name="$PROJECT_DIR$/resources/views/projects" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.tests">
-    <configuration name="Feature" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests/Feature" />
+  <component name="RunManager" selected="PHPUnit.TriggerActivityTest.test_completing_a_task_update_records_activity">
+    <configuration name="TriggerActivityTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TriggerActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="RecordActivityTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\RecordActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RecordActivityTest.php" scope="Class" />
+    <configuration name="TriggerActivityTest.test_completing_a_task_update_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TriggerActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" method="test_completing_a_task_update_records_activity" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RecordActivityTest.test_completing_a_task_update_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\RecordActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RecordActivityTest.php" method="test_completing_a_task_update_records_activity" scope="Method" />
+    <configuration name="TriggerActivityTest.test_creating_a_task_update_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TriggerActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" method="test_creating_a_task_update_records_activity" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RecordActivityTest.test_incompleting_a_task_update_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\RecordActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/RecordActivityTest.php" method="test_incompleting_a_task_update_records_activity" scope="Method" />
+    <configuration name="TriggerActivityTest.test_incompleting_a_task_update_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TriggerActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" method="test_incompleting_a_task_update_records_activity" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TriggerActivityTest.test_updating_a_project_records_activity" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\TriggerActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TriggerActivityTest.php" method="test_updating_a_project_records_activity" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" directory="$PROJECT_DIR$/tests" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.tests" />
-        <item itemvalue="PHPUnit.RecordActivityTest.test_incompleting_a_task_update_records_activity" />
-        <item itemvalue="PHPUnit.Feature" />
-        <item itemvalue="PHPUnit.RecordActivityTest.test_completing_a_task_update_records_activity" />
-        <item itemvalue="PHPUnit.RecordActivityTest" />
+        <item itemvalue="PHPUnit.TriggerActivityTest.test_completing_a_task_update_records_activity" />
+        <item itemvalue="PHPUnit.TriggerActivityTest.test_creating_a_task_update_records_activity" />
+        <item itemvalue="PHPUnit.TriggerActivityTest.test_incompleting_a_task_update_records_activity" />
+        <item itemvalue="PHPUnit.TriggerActivityTest" />
+        <item itemvalue="PHPUnit.TriggerActivityTest.test_updating_a_project_records_activity" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -226,11 +238,19 @@
       <workItem from="1593094737597" duration="6777000" />
       <workItem from="1593296290183" duration="294000" />
       <workItem from="1593351919244" duration="3336000" />
+      <workItem from="1593424302716" duration="619000" />
+      <workItem from="1593444137547" duration="1112000" />
+      <workItem from="1593611000098" duration="1034000" />
+      <workItem from="1593614660414" duration="386000" />
+      <workItem from="1593615187231" duration="4221000" />
+      <workItem from="1593819175208" duration="11000" />
+      <workItem from="1594475121484" duration="2273000" />
+      <workItem from="1597534240550" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -246,6 +266,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="first init" />
+    <option name="LAST_COMMIT_MESSAGE" value="first init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="176" key="#CLI_Interpreters" timestamp="1591893032958">
@@ -272,10 +294,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="491" y="131" key="#ProjectsTest_(1)/0.0.1680.1050@0.0.1680.1050" timestamp="1591997361906" />
-    <state x="100" y="63" width="1480" height="972" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592868984877">
+    <state x="100" y="63" width="1480" height="972" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593614291675">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="100" y="63" width="1480" height="972" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1592868984877" />
+    <state x="100" y="63" width="1480" height="972" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593614291675" />
     <state x="100" y="82" width="1480" height="909" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.982@0.23.1680.982" timestamp="1592703456269" />
     <state x="543" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592758844709">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -285,10 +307,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="643" y="214" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1593034372091" />
-    <state x="517" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593095986687">
+    <state x="517" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593614151762">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="517" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593095986687" />
+    <state x="517" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593614151762" />
     <state x="578" y="287" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591999350912">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -297,28 +319,33 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="491" y="147" key="#tests/0.23.1680.982@0.23.1680.982" timestamp="1591892810845" />
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1593295083745">
-      <screen x="0" y="23" width="1920" height="1012" />
+    <state x="397" y="23" width="869" height="982" key="CommitChangelistDialog2" timestamp="1593424676618">
+      <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1593191411086" />
+    <state x="397" y="22" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1593424443923" />
+    <state x="397" y="23" width="869" height="982" key="CommitChangelistDialog2/0.23.1680.982@0.23.1680.982" timestamp="1593424676618" />
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom" timestamp="1593628202546">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="293" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1593628202546" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.23.1680.982@0.23.1680.982" timestamp="1593024748156" />
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.23.1920.1012@0.23.1920.1012" timestamp="1593295083745" />
-    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1593295083744">
-      <screen x="0" y="23" width="1920" height="1012" />
+    <state width="1638" height="293" key="GridCell.Tab.0.center" timestamp="1593628202546">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1593191411085" />
+    <state width="1638" height="293" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1593628202546" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.23.1680.982@0.23.1680.982" timestamp="1593024748156" />
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.23.1920.1012@0.23.1920.1012" timestamp="1593295083744" />
-    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1593295083744">
-      <screen x="0" y="23" width="1920" height="1012" />
+    <state width="1638" height="293" key="GridCell.Tab.0.left" timestamp="1593628202545">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1593191411084" />
+    <state width="1638" height="293" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1593628202545" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.23.1680.982@0.23.1680.982" timestamp="1593024748155" />
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.23.1920.1012@0.23.1920.1012" timestamp="1593295083744" />
-    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1593295083745">
-      <screen x="0" y="23" width="1920" height="1012" />
+    <state width="1638" height="293" key="GridCell.Tab.0.right" timestamp="1593628202546">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1593191411086" />
+    <state width="1638" height="293" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1593628202546" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.23.1680.982@0.23.1680.982" timestamp="1593024748156" />
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.23.1920.1012@0.23.1920.1012" timestamp="1593295083745" />
     <state x="590" y="258" key="NewPhpClassDialog" timestamp="1592759077772">
@@ -333,9 +360,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="647" y="252" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1592418373935" />
-    <state x="341" y="153" key="SettingsEditor" timestamp="1591892943188">
-      <screen x="0" y="23" width="1680" height="982" />
+    <state x="396" y="120" key="SettingsEditor" timestamp="1593616096262">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="396" y="120" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1593616096262" />
     <state x="341" y="153" key="SettingsEditor/0.23.1680.982@0.23.1680.982" timestamp="1591892943188" />
     <state x="570" y="275" width="549" height="524" key="StructurePopup" timestamp="1592868375931">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -354,10 +382,10 @@
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="505" y="237" key="run.anything.popup/0.23.1680.982@0.23.1680.982" timestamp="1592861373948" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1593363349331">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1594477307032">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593363349331" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1594477307032" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1593074330601" />
   </component>
 </project>
